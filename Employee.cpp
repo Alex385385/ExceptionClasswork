@@ -29,7 +29,7 @@ public:
    }
    void setEmployeeNum(int n)
    {
-      if(n > 0 && n < 9999)
+      if(n > 0 && n <= 9999)
       {
          employeeNum = n;
       }
@@ -78,7 +78,7 @@ public:
    }
    void setShift(int n)
    {
-      if(n == 0 || n == 1)
+      if(n == 1 || n == 2)
       {
          shift = n;
       }
@@ -89,7 +89,7 @@ public:
    }
    void setHourlyPay(double n)
    {
-      if(n > 0)
+      if(n >= 0)
       {
          hourlyPay = n;
       }
